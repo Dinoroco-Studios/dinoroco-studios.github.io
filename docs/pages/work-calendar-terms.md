@@ -1,20 +1,14 @@
 ---
 layout: page
-title: Work Calendar
+title: Work Calendar – Terms of Use
 permalink: /work-calendar-terms/
-weight: 3
+nav_exclude: true
 ---
 
-<div class="h-100 d-flex align-items-center justify-content-center">
-<div class="col-lg-10 mx-auto mt-5 markdown-body">
-<h1 id="about-me"><strong>Terms and Conditions</strong></h1>
-<div id="container" class="my-2">
-      <p>Welcome to Work Calendar!
-      <br />
-	<br />
-      These terms and conditions outline the rules and regulations for the use of Work Calendar.
-      </p>
-      <p>By using this app we assume you accept these terms and conditions. Do not continue to use Work Calendar if you do not agree to take all of the terms and conditions stated on this page.</p>
+# Terms and Conditions
+
+<p>Welcome to Work Calendar!<br /><br />These terms and conditions outline the rules and regulations for the use of Work Calendar.</p>
+<p>By using this app we assume you accept these terms and conditions. Do not continue to use Work Calendar if you do not agree to take all of the terms and conditions stated on this page.</p>
 
 <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Spain. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
 <h3><strong>License</strong></h3>
@@ -124,6 +118,3 @@ weight: 3
 <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
 
 <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
-</div>  
-</div>
-</div>

@@ -9,58 +9,6 @@ $dark-900: #17191a;
     color: $text-white;
   }
 
-.ourclients:nth-child(1){
-  filter: invert(1);
-}
-  .ourclients:nth-child(2){
-    filter: invert(1);
-}
-.ourclients:nth-child(3){
-    filter: invert(1);
-}
-.ourclients:nth-child(4){
-  filter: invert(1);
-  filter: grayscale(100%);
-}
-.ourclients:nth-child(5){
-    filter: invert(1);
-}
-.ourclients:nth-child(6){
-  filter: invert(1);
-}
-.ourclients:nth-child(7){
-    filter: invert(1);
-}
-.ourclients:nth-child(8){
-    filter: invert(1);
-}
-.ourclients:nth-child(9){
-    filter: invert(1);
-}
-.ourclients:nth-child(10){
-  filter: invert(1);
-}
-.ourclients:nth-child(11){
-  filter: invert(1);
-}
-.ourclients:nth-child(12){
-    filter: invert(1);
-}
-.ourclients:nth-child(13){
-    filter: invert(1);
-}
-.ourclients:nth-child(14){
-  filter: invert(1);
-}
-.ourclients:nth-child(15){
-  filter: invert(1);
-}
-.ourclients:nth-child(16){
-  filter: invert(1);
-}
-.ourclients:nth-child(18){
-  filter: invert(1);
-}
   // Code blocks & Syntax highlighting
 
   @import "native.scss";
@@ -127,10 +75,5 @@ $dark-900: #17191a;
   // Post
   .post footer {
     text-decoration: none;
-  }
-
-  // Timeline 
-  .timeline-body .timeline-item:after{
-    background-color: $dark-900;
   }
 }

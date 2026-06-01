@@ -1,15 +1,13 @@
 ---
 layout: page
-title: Work Calendar
+title: Work Calendar – Privacy Policy
 permalink: /work-calendar-privacy/
-weight: 3
+nav_exclude: true
 ---
 
-<div class="h-100 d-flex align-items-center justify-content-center">
-<div class="col-lg-10 mx-auto mt-5 markdown-body">
-<h1 id="about-me"><strong>Privacy Policy for Work Calendar</strong></h1>
-<div id="container" class="my-2">
-      <p>At Work Calendar, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Work Calendar and how we use it.</p>
+# Privacy Policy for Work Calendar
+
+<p>At Work Calendar, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Work Calendar and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 
@@ -53,6 +51,3 @@ weight: 3
 <h2>Consent</h2>
 
 <p>By using our app, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
-</div>  
-</div>
-</div>

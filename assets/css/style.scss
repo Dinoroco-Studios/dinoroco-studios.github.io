@@ -2,211 +2,65 @@
 ---
 @import "portfolYOU";
 
-@media screen and (max-width: 48em) {
-    .our-clients__image{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) !important;
-        grid-gap: 30px !important; /* Adjust as needed */
-    }
-    .ourclients:nth-child(1){
-        margin-top: 0px !important;
-    }
-    .ourclients:nth-child(2){
-        margin-top: -25px !important;
-    }
-    .ourclients:nth-child(3){
-        margin-top: 0px !important;
-        filter: contrast(0.4);
-    }
-    .ourclients:nth-child(5){
-        margin-top: 0px !important;
-    }
-    .ourclients:nth-child(6){
-        margin-top: 25px !important;
-    }
-    .ourclients:nth-child(7){
-        margin-top: 5px !important;
-    }
-    .ourclients:nth-child(8){
-        margin-top: 8px !important;
-    }
-    .ourclients:nth-child(9){
-        margin-top: 15px !important;
-    }
-    .ourclients:nth-child(10){
-        margin-top: 40px !important;
-    }
-    .ourclients:nth-child(12){
-        margin-top: 20px !important;
-    }
-    .ourclients:nth-child(13){
-        margin-top: 20px !important;
-    }
-    .ourclients:nth-child(14){
-        margin-top: 15px !important;
-    }
-    .ourclients:nth-child(15){
-        margin-top: 25px !important;
-    }
-    .ourclients:nth-child(18){
-        margin-top: 35px !important;
-    }
+/* ---------- Landing (home & about) ---------- */
+
+.landing-hero {
+  min-height: 60vh;
+  padding: 4rem 1rem;
 }
 
-@media (min-width: 48em) and (max-width: 64.2em) {
-    .our-clients__image{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr) !important;
-        grid-gap: 70px !important; /* Adjust as needed */
-    }
-    .ourclients:nth-child(1){
-        margin-top: 0px !important;
-    }
-    .ourclients:nth-child(2){
-        margin-top: -50px !important;
-    }
-    .ourclients:nth-child(3){
-        margin-top: -10px !important;
-        filter: contrast(0.4);
-    }
-    .ourclients:nth-child(5){
-        margin-top: 0px !important;
-    }
-    .ourclients:nth-child(6){
-        margin-top: 25px !important;
-    }
-    .ourclients:nth-child(7){
-        margin-top: 5px !important;
-    }
-    .ourclients:nth-child(8){
-        margin-top: 8px !important;
-    }
-    .ourclients:nth-child(9){
-        margin-top: 5px !important;
-    }
-    .ourclients:nth-child(10){
-        margin-top: 65px !important;
-    }
-    .ourclients:nth-child(12){
-        margin-top: 20px !important;
-    }
-    .ourclients:nth-child(13){
-        margin-top: 20px !important;
-    }
-    .ourclients:nth-child(14){
-        margin-top: 10px !important;
-    }
-    .ourclients:nth-child(15){
-        margin-top: 35px !important;
-    }
-    .ourclients:nth-child(18){
-        margin-top: 50px !important;
-    }
+.landing-tagline {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin: 0 auto 1.25rem;
+  max-width: 32rem;
 }
 
-.our-clients__image{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 30px; /* Adjust as needed */
+.landing-tagline:last-child {
+  margin-bottom: 0;
 }
 
-.ourclients {
-    max-width: 100px; /* Adjust based on your needs */
-    height: auto;
-    margin: auto; /* Center the image within the grid cell */
+/* ---------- About (first centered, second near bottom) ---------- */
+
+.about-layout {
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+  text-align: center;
 }
 
-.clientsText{
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: bold;
+.about-layout .landing-tagline {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-@media screen and (min-width: 64em) {
-    .ourclients:nth-child(1){
-        margin-top: 55px !important;
-    }
-    .ourclients:nth-child(2){
-        margin-top: 20px !important;
-    }
-    .ourclients:nth-child(3){
-        margin-top: 60px !important;
-    }
-    .ourclients:nth-child(4){
-        margin-top: 50px !important;
-    }
-    .ourclients:nth-child(5){
-        margin-top: 25px !important;
-    }
-    .ourclients:nth-child(6){
-        margin-top: 0px !important;
-    }
-    .ourclients:nth-child(7){
-        margin-top: 5px !important;
-    }
-    .ourclients:nth-child(8){
-        margin-top: 8px !important;
-    }
-    .ourclients:nth-child(9){
-        margin-top: 20px !important;
-    }
-    .ourclients:nth-child(10){
-        margin-top: 5px !important;
-    }
-    .ourclients:nth-child(11){
-        margin-top: 30px !important;
-    }
-    .ourclients:nth-child(12){
-        margin-top: 25px !important;
-    }
-    .ourclients:nth-child(13){
-        margin-top: 75px !important;
-    }
-    .ourclients:nth-child(14){
-        margin-top: 70px !important;
-    }
-    .ourclients:nth-child(15){
-        margin-top: 85px !important;
-    }
-    .ourclients:nth-child(16){
-        margin-top: 35px !important;
-    } 
-    .ourclients:nth-child(17){
-        margin-top: 40px !important;
-    }
-    .ourclients:nth-child(18){
-        margin-top: 70px !important;
-    }
-    .ourclients:nth-child(19){
-        margin-top: 35px !important;
-    }
-    .ourclients:nth-child(20){
-        margin-top: 40px !important;
-    } 
+.about-layout .about-first {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.clients-description{
-    text-align: center;
-    font-size: 1em;
-    color: #838B91;
+.about-layout .about-second {
+  margin-top: 0;
+  margin-bottom: 6rem;
 }
 
-.our-clients__image{
-    margin: 90px 0px 50px 0px;
+/* ---------- Navbar polish ---------- */
+
+.img-logo {
+  max-width: 180px;
+  height: auto;
 }
-@media (min-width: 60em) and (max-width: 64.2em) {
-    .ourclients:nth-child(16){
-        margin-top: 40px !important;
-        margin-left: 0% !important;
-    } 
-    .ourclients:nth-child(17){
-        margin-left: 0% !important;
-        margin-top: 10px !important;
-    } 
-    .ourclients:nth-child(18){
-        margin-left: 0% !important;
-    }
+
+/* ---------- Footer polish ---------- */
+
+footer {
+  opacity: 0.85;
+}
+
+footer .social {
+  margin: 0 0.4rem;
+  font-size: 1.1rem;
 }

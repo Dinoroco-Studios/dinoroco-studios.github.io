@@ -1,30 +1,13 @@
 ### Site Settings ###
 title               : Dinoroco Studios
-description         : >-
-                      A Spanish software company founded in 2022 dedicated to developing applications for iOS.
-baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+description         : A Spanish software company founded in 2022, dedicated to crafting apps for iOS.
+baseurl             : ""
 repository          : Dinoroco-Studios/Dinoroco-Studios.github.io
-#remote_theme        : dinoroco/dinoroco.github.io
-open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
 ### Plugins ###
 plugins:
   - jemoji
-
-
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
-  - documentation/elements.html
-  - documentation/docs.md
-  - documentation/github.md
-  - pages/404.html
-  - pages/index.md
-  - pages/acerinox-terms.md
-  - pages/acerinox-privacy.md
-  - pages/work-calendar-terms.md
-  - pages/work-calendar-privacy.md
-  - documentation/partials/**                           # For Documentation Only
 
 
 ### Author Info ###
@@ -34,65 +17,20 @@ author:
   github            : Dinoroco-Studios
   linkedin          : dinoroco-studios
   twitter           : DinorocoStudios
-
-
-### Posts ###
-permalink: /blog/:title
-
-
-### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
-
-
-### Disqus ###
-disqus:
-  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+  image             : /assets/logo/logo1024x1024.webp
 
 
 ### Analytics ###
 analytics:
-  enabled: false                                        # Set true to enable analytics
+  enabled: false
   google:
     tracking_id: your-google-tracking-id
-
-
-### Buy me a coffee ###
-# See https://www.buymeacoffee.com/
-buymeacoffee:
-  enabled: false
-  username: your_username
-  color: "#007bff"
-  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
-  description: "Support me on Buy me a coffee!"
-
-
-### Defaults for collections ###
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false                                   # Set to true to enable disqus comments
 
 
 ### Exclude from processing ###
 exclude:
   - README.md
-  - CONTRIBUTING.md
-  - LICENSE
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
   - "*.log"
