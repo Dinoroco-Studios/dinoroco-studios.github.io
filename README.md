@@ -1,62 +1,110 @@
+# Dinoroco Studios — company website
 
-# Dinoroco Studios
+The public website for **Dinoroco Studios**, a Spanish software company
+founded in 2022 that builds apps for iOS.
 
-## Overview
+- **Live site:** <https://www.dinoroco.com>
+- **Repo:** `Dinoroco-Studios/dinoroco-studios.github.io` (GitHub Pages, organisation site)
+- **Stack:** [Jekyll](https://jekyllrb.com/) via the `github-pages` gem — static,
+  no database, no analytics.
 
-Welcome to **Dinoroco Studios**. This repository contains the source code and documentation for our cutting-edge software.
+---
 
-## Table of Contents
+## What the site is
 
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-  - [Configuration](#configuration)
-  - [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+Deliberately minimal: a one-line landing page, a short About, and the legal
+pages that the shipped apps link to. There is no blog, no portfolio and no
+marketing catalog.
 
-## Getting Started
+| Page | URL |
+|---|---|
+| Landing | `/` |
+| About | `/about/` |
+| Work Calendar — Privacy | `/work-calendar-privacy/` |
+| Work Calendar — Terms | `/work-calendar-terms/` |
+| Acerinox — Privacy | `/acerinox-privacy/` |
+| Acerinox — Terms | `/acerinox-terms/` |
 
-These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes. See [Usage](#usage) for notes on how to use the software in a production environment.
+The two app privacy/terms pairs are linked from inside the apps themselves, so
+they must keep their current URLs.
 
-### Prerequisites
+---
 
-Before you begin, ensure you have met the following requirements:
+## Company facts
 
-- [List any prerequisites or dependencies here, e.g., programming language version, external libraries, etc.]
+| | |
+|---|---|
+| Name | Dinoroco Studios |
+| Founded | 2022 |
+| Country | Spain |
+| Contact | info@dinoroco.com |
+| Domain | www.dinoroco.com |
 
-### Installation
+These live in the `author:` block of [`_config.yml`](_config.yml) and feed the
+navbar, footer and social links.
 
-1. [Step-by-step installation instructions]
+---
 
-## Usage
+## Project structure
 
-Explain how to use the software once it is installed. Provide examples and guidelines to help users understand the functionality.
-
-### Configuration
-
-[If applicable, provide information on how to configure the software. This may include configuration files, environment variables, or other setup steps.]
-
-### Examples
-
-```bash
- Provide usage examples or code snippets
+```
+.
+├── _config.yml           # Site + author config
+├── CNAME                 # www.dinoroco.com
+├── Gemfile               # github-pages gem
+├── docs/pages/           # Every page lives here
+│   ├── index.md          # Landing (renders _includes/landing.html)
+│   ├── about.md          # About
+│   ├── 404.html
+│   ├── work-calendar-privacy.md / work-calendar-terms.md
+│   └── acerinox-privacy.md / acerinox-terms.md
+├── _includes/            # landing, navbar, footer, head, social, analytics
+├── _layouts/             # default.html, page.html
+├── _sass/                # portfolYOU-derived styles (base, navbar, footer, themes)
+├── assets/               # style.scss, theme.js, logos, favicons
+└── _site/                # Build output (committed, see note below)
 ```
 
-### Contributing
+---
 
-We welcome contributions from the community! If you'd like to contribute  Dinoroco Studios Software, please follow these guidelines.
+## Local development
 
-1. Fork the repository.
-2. Create a new branch for your features or bug fix.
-3. Make your changes and submit a pull request.
+Requires Ruby (3.2+) and Bundler.
 
-### License
+```bash
+bundle install
+bundle exec jekyll serve      # http://127.0.0.1:4000
+bundle exec jekyll build      # output to _site/
+```
 
-This project is licensed under the MIT License- see the [LICENSE.md](LICENSE.md) file for details.
+### Notes
 
-### Contact
+- **Dark mode** is handled by `assets/js/theme.js` with `_sass/_theme-dark.scss`.
+- **Analytics are off** (`analytics.enabled: false` in `_config.yml`); nothing
+  third-party is loaded.
+- **`_site/` is committed** in this repo. GitHub Pages does not serve it — it
+  runs its own Jekyll build from `main` — so it is a historical artefact rather
+  than the deployed output. If you edit a page, rebuild before committing so the
+  two do not drift, or drop the directory from version control.
 
-If you have any question, concerns, or suggestions, feel free to contact us at [info@dinoroco.com](mailto:info@dinoroco.com).
+---
+
+## Deployment
+
+Pushing to `main` triggers a GitHub Pages build automatically. In
+**Settings → Pages** the custom domain is `www.dinoroco.com` with **Enforce
+HTTPS** enabled.
+
+**DNS** (at the registrar):
+
+- `CNAME` · `www` → `dinoroco-studios.github.io`
+- `A` · `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+  (the apex redirects to `www`)
+
+---
+
+## License
+
+MIT — see [LICENSE.md](LICENSE.md).
+
+© 2026 Dinoroco Studios. All rights reserved.
